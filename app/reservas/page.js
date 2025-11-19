@@ -7,7 +7,7 @@ export default function Reservas() {
   const [reservas, setReservas] = useState([]);
 
   const carregar = async () => {
-    const res = await fetch("https://SEU-BACKEND.onrender.com/reservas");
+    const res = await fetch("https://reservas-backend-gq28.onrender.com/reservas");
     const data = await res.json();
     setReservas(data);
   };
