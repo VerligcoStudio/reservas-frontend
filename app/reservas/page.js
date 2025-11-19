@@ -13,7 +13,7 @@ export default function Reservas() {
   };
 
   const remover = async (id) => {
-    await fetch(`https://SEU-BACKEND.onrender.com/reservas/${id}`, {
+    await fetch(`await fetch(`https://reservas-backend-gq28.onrender.com/reservas/${id}`, {
       method: "DELETE"
     });
     carregar();
