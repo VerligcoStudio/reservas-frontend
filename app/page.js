@@ -9,7 +9,7 @@ export default function Home() {
   const [horario, setHorario] = useState("");
 
   const criarReserva = async () => {
-    const res = await fetch("https://reservas-backend-gq28.onrender.com/reservas", {
+    const res = await fetch("https://reservas-backend-gq28.onrender.com", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ nome, pessoas, horario })
